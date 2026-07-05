@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T04:38:05.112Z",
+  "generatedAt": "2026-07-05T04:41:07.124Z",
   "lineage": {
     "edges": [
       {
@@ -74,7 +74,7 @@
       {
         "configRoot": ".",
         "configVersion": "unknown",
-        "generatedAt": "2026-07-05T04:38:04.091Z",
+        "generatedAt": "2026-07-05T04:41:06.098Z",
         "gitBackend": "simple-git",
         "ref": "8a9824e0b0dca2f33f67b4b7b098bc86fc5c6257",
         "repo": "https://github.com/aws/lza-universal-configuration",
@@ -86,7 +86,7 @@
       {
         "configRoot": ".",
         "configVersion": "unknown",
-        "generatedAt": "2026-07-05T04:38:04.091Z",
+        "generatedAt": "2026-07-05T04:41:06.098Z",
         "gitBackend": "simple-git",
         "ref": "2916b696566c4116661475864dd4f087664aabed",
         "repo": "https://github.com/aws-samples/landing-zone-accelerator-on-aws-for-healthcare",
