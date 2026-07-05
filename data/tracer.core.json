@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T04:45:13.412Z",
+  "generatedAt": "2026-07-05T08:32:37.981Z",
   "lineage": {
     "edges": [
       {
@@ -74,7 +74,8 @@
       {
         "configRoot": ".",
         "configVersion": "unknown",
-        "generatedAt": "2026-07-05T04:45:02.331Z",
+        "configVersionExtractor": null,
+        "generatedAt": "2026-07-05T08:32:26.278Z",
         "gitBackend": "simple-git",
         "ref": "61bba812ce71472684bb7c07f60f1e7100b18cc9",
         "repo": "https://github.com/awslabs/landing-zone-accelerator-on-aws",
@@ -86,7 +87,8 @@
       {
         "configRoot": ".",
         "configVersion": "unknown",
-        "generatedAt": "2026-07-05T04:45:02.331Z",
+        "configVersionExtractor": null,
+        "generatedAt": "2026-07-05T08:32:26.278Z",
         "gitBackend": "simple-git",
         "ref": "8a9824e0b0dca2f33f67b4b7b098bc86fc5c6257",
         "repo": "https://github.com/aws/lza-universal-configuration",
