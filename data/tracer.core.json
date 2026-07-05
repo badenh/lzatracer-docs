@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T04:41:07.124Z",
+  "generatedAt": "2026-07-05T04:44:20.845Z",
   "lineage": {
     "edges": [
       {
@@ -74,7 +74,7 @@
       {
         "configRoot": ".",
         "configVersion": "unknown",
-        "generatedAt": "2026-07-05T04:41:06.098Z",
+        "generatedAt": "2026-07-05T04:44:17.459Z",
         "gitBackend": "simple-git",
         "ref": "8a9824e0b0dca2f33f67b4b7b098bc86fc5c6257",
         "repo": "https://github.com/aws/lza-universal-configuration",
@@ -86,7 +86,7 @@
       {
         "configRoot": ".",
         "configVersion": "unknown",
-        "generatedAt": "2026-07-05T04:41:06.098Z",
+        "generatedAt": "2026-07-05T04:44:17.459Z",
         "gitBackend": "simple-git",
         "ref": "2916b696566c4116661475864dd4f087664aabed",
         "repo": "https://github.com/aws-samples/landing-zone-accelerator-on-aws-for-healthcare",
@@ -98,6 +98,762 @@
     ]
   },
   "pairs": [
+    {
+      "a": "cccs",
+      "b": "tse-se",
+      "chunk": "tracer.pair.cccs-tse-se.json",
+      "summary": {
+        "byFile": {},
+        "bySection": {},
+        "total": {
+          "added": 0,
+          "changed": 0,
+          "removed": 0
+        }
+      }
+    },
+    {
+      "a": "healthcare",
+      "b": "cccs",
+      "chunk": "tracer.pair.healthcare-cccs.json",
+      "summary": {
+        "byFile": {
+          "config/accounts-config.yaml": {
+            "added": 0,
+            "changed": 16,
+            "removed": 0
+          },
+          "config/backup-policies/backup-plan.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/bucket-policies/central-log-bucket.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/custom-config-rules/imdsv2-remediation-role.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/customizations-config.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/customizations/AlbIpForwardingStack.template.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/dynamic-partitioning/log-filters.json": {
+            "added": 6,
+            "changed": 2,
+            "removed": 0
+          },
+          "config/event-bus-policies/event-bus-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/global-config.yaml": {
+            "added": 28,
+            "changed": 33,
+            "removed": 12
+          },
+          "config/iam-config.yaml": {
+            "added": 18,
+            "changed": 17,
+            "removed": 1
+          },
+          "config/iam-policies/boundary-policy.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/iam-policies/rdgw-custom-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/iam-policies/ssm-s3-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/network-config.yaml": {
+            "added": 75,
+            "changed": 114,
+            "removed": 16
+          },
+          "config/organization-config.yaml": {
+            "added": 35,
+            "changed": 35,
+            "removed": 0
+          },
+          "config/replacements-config.yaml": {
+            "added": 70,
+            "changed": 13,
+            "removed": 0
+          },
+          "config/security-config.yaml": {
+            "added": 76,
+            "changed": 166,
+            "removed": 81
+          },
+          "config/service-control-policies/FullAWSAccess.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Part0-CoreOUs.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Part0-WkldOUs.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Part1.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Sensitive.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Unclass.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/Quarantine-New-Object.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/quarantine.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-accelerator1.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-accelerator2.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-hcl-base-root.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-hcl-hipaa-service.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/ssm-documents/attach-iam-role-policy.yaml": {
+            "added": 0,
+            "changed": 1,
+            "removed": 0
+          },
+          "config/tagging-policies/healthcare-org-tag-policy.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/tagging-policies/org-tag-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/tagging-policies/s3-tag-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "reference-artifacts/organizations-setup/setup-organizational-units.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "reference-artifacts/organizations-setup/setup-prerequisites.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "reference-artifacts/third-party/fortinet/config/customizations-config.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          }
+        },
+        "bySection": {
+          "AlbIpForwardingStack.template": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "FullAWSAccess": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Part0-CoreOUs": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Part0-WkldOUs": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Part1": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Sensitive": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Unclass": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "Quarantine-New-Object": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "accounts-config": {
+            "added": 0,
+            "changed": 16,
+            "removed": 0
+          },
+          "attach-iam-role-policy": {
+            "added": 0,
+            "changed": 1,
+            "removed": 0
+          },
+          "backup-plan": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "boundary-policy": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "central-log-bucket": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "customizations-config": {
+            "added": 2,
+            "changed": 0,
+            "removed": 0
+          },
+          "event-bus-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "global-config": {
+            "added": 28,
+            "changed": 33,
+            "removed": 12
+          },
+          "healthcare-org-tag-policy": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "iam-config": {
+            "added": 18,
+            "changed": 17,
+            "removed": 1
+          },
+          "imdsv2-remediation-role": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "log-filters": {
+            "added": 6,
+            "changed": 2,
+            "removed": 0
+          },
+          "network-config": {
+            "added": 75,
+            "changed": 114,
+            "removed": 16
+          },
+          "org-tag-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 1
+          },
+          "organization-config": {
+            "added": 35,
+            "changed": 35,
+            "removed": 0
+          },
+          "quarantine": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "rdgw-custom-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "replacements-config": {
+            "added": 70,
+            "changed": 13,
+            "removed": 0
+          },
+          "s3-tag-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "scp-accelerator1": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "scp-accelerator2": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "scp-hcl-base-root": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "scp-hcl-hipaa-service": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "security-config": {
+            "added": 76,
+            "changed": 166,
+            "removed": 81
+          },
+          "setup-organizational-units": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "setup-prerequisites": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "ssm-s3-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          }
+        },
+        "total": {
+          "added": 326,
+          "changed": 397,
+          "removed": 120
+        }
+      }
+    },
+    {
+      "a": "healthcare",
+      "b": "tse-se",
+      "chunk": "tracer.pair.healthcare-tse-se.json",
+      "summary": {
+        "byFile": {
+          "config/accounts-config.yaml": {
+            "added": 0,
+            "changed": 16,
+            "removed": 0
+          },
+          "config/backup-policies/backup-plan.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/bucket-policies/central-log-bucket.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/custom-config-rules/imdsv2-remediation-role.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/customizations-config.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/customizations/AlbIpForwardingStack.template.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/dynamic-partitioning/log-filters.json": {
+            "added": 6,
+            "changed": 2,
+            "removed": 0
+          },
+          "config/event-bus-policies/event-bus-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/global-config.yaml": {
+            "added": 28,
+            "changed": 33,
+            "removed": 12
+          },
+          "config/iam-config.yaml": {
+            "added": 18,
+            "changed": 17,
+            "removed": 1
+          },
+          "config/iam-policies/boundary-policy.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/iam-policies/rdgw-custom-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/iam-policies/ssm-s3-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/network-config.yaml": {
+            "added": 75,
+            "changed": 114,
+            "removed": 16
+          },
+          "config/organization-config.yaml": {
+            "added": 35,
+            "changed": 35,
+            "removed": 0
+          },
+          "config/replacements-config.yaml": {
+            "added": 70,
+            "changed": 13,
+            "removed": 0
+          },
+          "config/security-config.yaml": {
+            "added": 76,
+            "changed": 166,
+            "removed": 81
+          },
+          "config/service-control-policies/FullAWSAccess.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Part0-CoreOUs.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Part0-WkldOUs.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Part1.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Sensitive.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/LZA-Guardrails-Unclass.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/Quarantine-New-Object.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "config/service-control-policies/quarantine.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-accelerator1.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-accelerator2.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-hcl-base-root.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/service-control-policies/scp-hcl-hipaa-service.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/ssm-documents/attach-iam-role-policy.yaml": {
+            "added": 0,
+            "changed": 1,
+            "removed": 0
+          },
+          "config/tagging-policies/healthcare-org-tag-policy.json": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/tagging-policies/org-tag-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 1
+          },
+          "config/tagging-policies/s3-tag-policy.json": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "reference-artifacts/organizations-setup/setup-organizational-units.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "reference-artifacts/organizations-setup/setup-prerequisites.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "reference-artifacts/third-party/fortinet/config/customizations-config.yaml": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          }
+        },
+        "bySection": {
+          "AlbIpForwardingStack.template": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "FullAWSAccess": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Part0-CoreOUs": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Part0-WkldOUs": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Part1": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Sensitive": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "LZA-Guardrails-Unclass": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "Quarantine-New-Object": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "accounts-config": {
+            "added": 0,
+            "changed": 16,
+            "removed": 0
+          },
+          "attach-iam-role-policy": {
+            "added": 0,
+            "changed": 1,
+            "removed": 0
+          },
+          "backup-plan": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "boundary-policy": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "central-log-bucket": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "customizations-config": {
+            "added": 2,
+            "changed": 0,
+            "removed": 0
+          },
+          "event-bus-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "global-config": {
+            "added": 28,
+            "changed": 33,
+            "removed": 12
+          },
+          "healthcare-org-tag-policy": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "iam-config": {
+            "added": 18,
+            "changed": 17,
+            "removed": 1
+          },
+          "imdsv2-remediation-role": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "log-filters": {
+            "added": 6,
+            "changed": 2,
+            "removed": 0
+          },
+          "network-config": {
+            "added": 75,
+            "changed": 114,
+            "removed": 16
+          },
+          "org-tag-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 1
+          },
+          "organization-config": {
+            "added": 35,
+            "changed": 35,
+            "removed": 0
+          },
+          "quarantine": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "rdgw-custom-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "replacements-config": {
+            "added": 70,
+            "changed": 13,
+            "removed": 0
+          },
+          "s3-tag-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "scp-accelerator1": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "scp-accelerator2": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "scp-hcl-base-root": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "scp-hcl-hipaa-service": {
+            "added": 0,
+            "changed": 0,
+            "removed": 1
+          },
+          "security-config": {
+            "added": 76,
+            "changed": 166,
+            "removed": 81
+          },
+          "setup-organizational-units": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "setup-prerequisites": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          },
+          "ssm-s3-policy": {
+            "added": 1,
+            "changed": 0,
+            "removed": 0
+          }
+        },
+        "total": {
+          "added": 326,
+          "changed": 397,
+          "removed": 120
+        }
+      }
+    },
     {
       "a": "lza-base",
       "b": "tse-se",
